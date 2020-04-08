@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="39.957312">
+<testcase classname="Free Crm Login Feature" name="Free Crm Login Test Scenario" time="23.67133">
+<system-out><![CDATA[Given user is already on login page.........................................passed
+When title of login page is Free Crm........................................passed
+Then user enters batchautomation and Test@12345.............................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free Crm Login Feature" name="Free Crm Login Test Scenario 2" time="16.285982">
+<failure message="org.junit.ComparisonFailure: expected:&lt;CRMPRO[]&gt; but was:&lt;CRMPRO[ - CRM software for customer relationship management, sales, and support.]&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:117)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:146)&#13;&#10;&#9;at StepDefinitions.LoginStepDefinition.user_is_on_home_page(LoginStepDefinition.java:72)&#13;&#10;&#9;at ✽.Then user is on home page(login.feature:18)&#13;&#10;"><![CDATA[Given user is already on login page.........................................passed
+When title of login page is Free Crm........................................passed
+Then user enters Tom and Test@123...........................................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<CRMPRO[]> but was:<CRMPRO[ - CRM software for customer relationship management, sales, and support.]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefinitions.LoginStepDefinition.user_is_on_home_page(LoginStepDefinition.java:72)
+	at ✽.Then user is on home page(login.feature:18)
+]]></failure>
+</testcase>
+</testsuite>
